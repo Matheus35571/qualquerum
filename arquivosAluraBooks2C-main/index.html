@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+ <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AluraBooks</title>
@@ -12,9 +12,9 @@
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="styles.css">
-</head>
+ </head>
 
-<body>
+ <body>
   <header class="cabeçalho">
     <div class="container">
       <input type="checkbox" id="menu" class="container__botao">
@@ -256,6 +256,23 @@
 
     <ul class="lista-rodapé">
       <li class="lista-rodapé__título">Educação online</li>
+      <li class="lista-rodapé__item">
       <img src="img/Alura.svg" alt="Logo da Alura" />
+      <a href="#" class="lista-rodapé__link">Alura</a>
+      </li>
     </ul>
   </footer>
+
+  <script src="https://cdn.jsdrlivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new swiper(".swiper",{
+      spaceBetween: 10,
+      slidePerView: 3,
+      pgination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      }, 
+    });
+  </script>
+</body>
+</html>
